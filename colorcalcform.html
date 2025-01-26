@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/colorcalc.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neucha&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+    <body>
+        <div class="blurry-background"></div>        
+        <div id="page">
+            
+            <div id="header">
+                <h1> Гайфутдинов Рустам Рафильевич (веб-разработчик) </h1>
+            </div>   
+        
+    
+            <div id="main">
+                <div id="menu">
+                    <h3>
+                        <p> <a href="index.html">Главная</a></p>
+                        <p> <a href="jsexample.html">Примеры JS</a></p>
+                        <p> <a href="colorcalcform.html">Форма цвета</a></p>
+                        <p> <a href="phpexamples.php">Примеры PHP</a></p>  
+                        <p> <a href="calcform.php">Калькулятор PHP</a></p>
+                        <p> <a href="uploadFileForm.php"> Загрузка файла</a></p>
+                        <p> <a href="registrationForm.html">Форма регистрации</a></p>
+                        <p> <a href="weather.html">Погода в городе</a></p>
+                     
+                    </h3>
+            </div>
+
+            <div id="content">
+                    <h2>Форма калькулятора цветов</h2>
+                    <form name="color_calc" action="" onsubmit="return calculateColor('n1', 'n2', 'op', 'result', 'color_result')">
+                        <h3 style="text-align: left;">
+                        <label for="n1">Число 1</label>
+                        <input type="number" name="n1" id="n1" oninput="convertToColor('n1','color_n1')">
+                        <span id="color_n1" style="background: rgb(241, 234, 225);">Цвет 1</span>
+                        <br/>
+                        <label for="op">Операция(+; -; *; /)</label>
+                        <input type="text" maxlength="1" size="1" name="op" id="op">
+                        <br/>
+                        <label for="n2">Число 2</label>
+                        <input type="number" name="n2" id="n2" oninput="convertToColor('n2','color_n2')">
+                        <span id="color_n2" style="background: rgb(241, 234, 225);">Цвет 2</span>
+                        <br/>
+                        <button type="submit" class="styled-button">Посчитать</button>
+                        </h3>
+                    </form>
+                    <h3 style="text-align: left;">
+                    Результат
+                    <span id="result">значение</span>
+                    <span id="color_result" style="background: rgb(241, 234, 225);">Цвет результата</span>
+                    <br/>
+                    <button onclick="fillRandomNumbers()" class="styled-button">Сгенерировать</button>
+                    </h3>
+            </div>
+        </div>
+        
+        <div id="projects">
+                <h2>Примеры выполненных мною проектов </h2>
+        </div>
+        
+        <div class="block1">Проект1</div>
+        <div class="block2">Проект2</div>
+        <div class="block3">Проект3</div>  
+    
+    </div>  
+
+</body>
+
+</html>
